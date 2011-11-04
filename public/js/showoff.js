@@ -30,7 +30,9 @@ function setupPreso(load_slides, prefix) {
 
 	loadSlidesBool = load_slides
 	loadSlidesPrefix = prefix
-	loadSlides(loadSlidesBool, loadSlidesPrefix)
+	$(window).load(function(){
+	  loadSlides(loadSlidesBool, loadSlidesPrefix)
+	});
 
 	doDebugStuff()
 
@@ -322,7 +324,7 @@ function executeAnyCode()
   var $coffeeCode = $('.execute .sh_coffeescript code:visible')
   if ($coffeeCode.length > 0) {
       executeCoffee.call($coffeeCode);
-  } 
+  }
 }
 
 function debug(data)
