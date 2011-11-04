@@ -1,7 +1,7 @@
 require './lib/version'
 Gem::Specification.new do |s|
   s.name              = "showoff"
-  s.version           = ShowOff::Version
+  s.version           = ShowOffVersion.version
   s.date              = "2011-09-10"
   s.summary           = "The best damn presentation software a developer could ever love."
   s.homepage          = "http://github.com/schacon/showoff"
