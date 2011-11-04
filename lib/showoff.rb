@@ -4,6 +4,7 @@ require 'json'
 require 'nokogiri'
 require 'fileutils'
 require 'logger'
+require 'version'
 
 here = File.expand_path(File.dirname(__FILE__))
 require "#{here}/showoff_utils"
@@ -30,8 +31,6 @@ rescue LoadError
 end
 
 class ShowOff < Sinatra::Application
-
-  Version = VERSION = '0.7.0'
 
   attr_reader :cached_image_size
 
