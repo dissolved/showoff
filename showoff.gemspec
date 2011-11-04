@@ -1,4 +1,4 @@
-require './lib/showoff'
+require_relative 'lib/showoff'
 Gem::Specification.new do |s|
   s.name              = "showoff"
   s.version           = ShowOff::Version
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
 
   The idea is that you setup your slide files in section subdirectories and
   then startup the showoff server in that directory.  It will read in your
-  showoff.json file for which sections go in which order and then will give 
+  showoff.json file for which sections go in which order and then will give
   you a URL to present from.
   desc
 end
