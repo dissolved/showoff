@@ -1,3 +1,5 @@
-class ShowOff < Sinatra::Application
-  Version = VERSION = '0.7.0'
+class ShowOffVersion
+  def self.version
+    '0.7.1'
+  end
 end
